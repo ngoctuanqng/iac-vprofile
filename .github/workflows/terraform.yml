@@ -24,7 +24,7 @@ env:
 jobs:
   terraform:
     name: "Apply terraform code changes"
-    runs-on: ubuntu-lastest
+    runs-on: ubuntu-latest
     defaults:
       run:
         shell: bash
