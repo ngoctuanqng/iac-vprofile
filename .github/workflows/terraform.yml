@@ -49,5 +49,5 @@ jobs:
         id: plan
         run: terraform plan -no-color -input=false -out planfile
       - name: Terraform plan status
-        if: steps.plan.outcome == 'failure'
+        if: ${{ steps.plan.outcome == 'failure' }}
         run: exit 1
